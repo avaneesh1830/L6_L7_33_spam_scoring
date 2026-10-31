@@ -31,4 +31,7 @@ python -m coverage run --branch -m pytest -q CodeCoverageTest_spam_scoring.py Br
 python -m coverage report -m spam_scoring.py
 ```
 
-The first report records statement coverage. The branch suite adds the missing outcome for a known sender whose score remains above zero.
+The first report records statement coverage. The branch suite adds the missing outcome for a known sender whose score remains above zero. Both stages reach 100% coverage for `spam_scoring.py`.
+
+- [Code coverage report](screenshots/code_coverage.png)
+- [Branch coverage report](screenshots/branch_coverage.png)
