@@ -11,6 +11,24 @@ A small Python module that scores messages for spam signals, classifies them and
 | File | Description |
 |------|-------------|
 | `spam_scoring.py` | The module under test |
-| `test_spam_scoring.py` | Starter test file |
+| `CodeCoverageTest_spam_scoring.py` | Tests for statement (line) coverage |
+| `BranchCoverageTest_spam_scoring.py` | Additional tests for missed decision branches |
+| `screenshots/` | Coverage report screenshots |
 
-Refer to the lab handout for instructions.
+## Run the coverage stages
+
+From this directory, run the statement coverage suite and report:
+
+```sh
+python -m coverage run -m pytest -q CodeCoverageTest_spam_scoring.py
+python -m coverage report -m spam_scoring.py
+```
+
+Then run both suites with branch measurement:
+
+```sh
+python -m coverage run --branch -m pytest -q CodeCoverageTest_spam_scoring.py BranchCoverageTest_spam_scoring.py
+python -m coverage report -m spam_scoring.py
+```
+
+The first report records statement coverage. The branch suite adds the missing outcome for a known sender whose score remains above zero.
