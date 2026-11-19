@@ -50,3 +50,7 @@ python -m pytest -q test_spam_scoring.py
 2. Failing fuzz test output from `python -m pytest -q fuzz_failure_demo.py`.
 3. Fixed program output from `python spam_scoring.py`.
 4. Passing test output from `python -m pytest -q test_spam_scoring.py`.
+
+## Report
+
+The completed screenshot report is [PES2UG24CS098_SE_Lab_7.pdf](PES2UG24CS098_SE_Lab_7.pdf). The editable Pages evidence file is `Lab_7_FuzzTesting_Evidence.pages`.
